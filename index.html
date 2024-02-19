@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Formulario de Adoção</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="page">
+ <header>
+    <h1>Adote seu amor de 4 patas!</h1>
+    <p>Preencha o formulário com atenção e carinho, afinal, os maiores beneficiados serão nossos bichanos!</p>
+  </header>
+
+  <form id="form">
+
+<fieldset>
+  <div class="fieldset-wrapper">
+
+  <legend>Dados Pessoais:</legend>
+
+  <div class="input-wrapper">
+  <label for="full-name">Nome completo <span>(nomes sociais são bem vindos)</span></label>
+  <input 
+  type="text" 
+  id="full-name" 
+  required/>
+  </div>
+
+  <div class="input-wrapper">
+  <label for="full-address">Endereço/Cidade/Estado/CEP</label>
+  <input 
+  type="text" 
+  d="full-address"
+  required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="whatsapp-number">WhatsApp para contato  <span>(somente números)</span></label>
+  <input 
+  type="number" 
+  id="whatsapp-number" 
+  required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="email-address">E-mail</label>
+  <input 
+  type="email" 
+  id="email-address" 
+  required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="minimum-age">É maior de 18 anos? Se não, indicar o nome completo e CPF do responsável</label>
+  <textarea id="minimum-age" required></textarea>
+</div>
+
+ <legend>Sua residência:</legend>
+
+<div class="input-wrapper">
+  <label for="home-info">Onde você mora?</label>
+  <select id="home-info">
+  <option value="house">Casa</option>
+  <option value="condo">Apartamento</option>
+  <option value="loft">Kitnet</option>
+  <option value="farm">Sítio</option>
+  </select>
+</div>
+
+<div class="input-wrapper">
+  <label for="rented-or-not">Sua residência é alugada ou própria?</label>
+  <select id="rented-or-not">
+  <option value="bought">Própria</option>
+  <option value="rented">Alugada</option>
+  </select>
+</div>
+
+<div class="input-wrapper">
+  <label for="security">Nos envie foto das telas nas janelas da sua residência <span>(eliminatória)</span></label>
+  <input type="file" name="imagem" id="imagem" multiple accept="image/*" required>
+  <button type="submit">Enviar</button>
+</div>
+  
+<div class="input-wrapper">
+  <label for="outdoor-cat">O gato terá alguma rota de fuga?<span>(eliminatória)</span></label>
+  <input type="text" id="outdoor-cat" required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="no-outdoors">Permite saídas?<span>(eliminatória)</span></label>
+  <input type="text" id="no-outdoors" required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="animals-ok">Caso você more de aluguel, é permitido animais?<span>(eliminatória)</span></label>
+  <input type="text" id="animals-ok" required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="adoption-ok">Todas as pessoas moradoras da casa estão de acordo com a adoção?<span>(eliminatória)</span></label>
+  <input type="text" id="adoption-ok" required/>
+</div>
+
+<legend>Informações gerais:</legend>
+
+<div class="input-wrapper">
+  <label for="work-ok">Descreva sua fonte de renda<span>(eliminatória)</span></label>
+  <input type="text" id="work-ok" required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="socialmedia-ok">Deixe aqui seu Instagram para acompanharmos a adoção</label>
+  <input type="text" id="socialmedia-ok" required />
+</div>
+
+<div class="input-wrapper">
+  <label for="other-animals">Tem ou já teve animais de estimação? Se sim, quais?</label>
+  <input type="text" id="other-animals" required />
+</div>
+
+<div class="input-wrapper">
+  <label for="sick-animals">Seu animal de estimação já ficou doente, morreu ou foi doado para outra pessoa?</label>
+  <input type="text" id="sick-animals" required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="dead-animals">Seu animal de estimação já faleceu? Se sim, poderia nos contar a causa?</label>
+  <input type="text" id="dead-animals" required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="plus-animal">Você tem um animal de estimação no momento? Se sim, qual o temperamento dele/a?</label>
+  <input type="text" id="plus-animal" required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="animal-fur">Alguém em sua residência é alérgico a pêlo de animais?</label>
+  <select id="animal-fur">
+  <option value="Yes">Sim</option>
+  <option value="No">Não</option>
+  <option value="Yes-but">Sim, mas toma medicação</option>
+  </select>
+</div>
+
+<legend>Sobre a adoção:</legend>
+
+<div class="input-wrapper">
+  <label for="travel-cat">Em caso de viagens, como e com quem o gato escolhido irá ficar?<span>(eliminatória)</span></label>
+  <input type="text" id="travel-cat" required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="moving-cat">Caso se mude de residência, como o gato escolhido ficará?<span>(eliminatória)</span></label>
+  <input type="text" id="moving-cat" required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="breakup-cat">Considerando que se case/seja casado(a), caso haja separação, como ficará o gato escolhido?<span>(eliminatória)</span></label>
+  <input type="text" id="breakup-cat" required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="alone-cat">Quanto tempo o gato escolhido ficará sozinho por dia? E ele terá alguma recreação?<span>(eliminatória)</span></label>
+  <input type="text" id="alone-cat" required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="playful-cat">Já preparou o ambiente com enriquecimento ambiental para receber seu gato, caso seja aprovado? <span>(eliminatória)</span></label>
+  <input type="text" id="playful-cat" required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="cat-care">Serão necessários cuidados médicos, vacinas, ração e areia de qualidade. Você já contabilizou isso no seu orçamento? <span>(eliminatória)</span></label>
+  <select id="cat-care">
+  <option value="Yes">Sim</option>
+  <option value="No">Não</option>
+  </select>
+</div>
+
+<div class="input-wrapper">
+  <label for="lifetime-cat">O tempo médio de vida de um gato doméstico é de 12 á 16 anos. Você está realmente preparado para esse comprmisso? <span>(eliminatória)</span></label>
+  <input type="text" id="lifetime-cat" required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="what-cat">Por qual gato/a que você se interessou? E por que se interessou por ele/a?</label>
+  <input type="text" id="what-cat" required/>
+</div>
+
+<div class="input-wrapper">
+  <label for="prohibitions-in-adoption">É estritamente proibido o repasse ou doação para terceiros do(s) gato(s) adotados conosco. Caso essa situação ocorra, o adotante deverá informar imediatamente aos responsáveis pelo projeto e arcará com uma multa de R$400,00 por gato para cobrir gastos veterinários, alimentação e danos morais ao animal. De acordo? <span>(eliminatória)</span></label>
+  <select id="prohibitions-in-adoption" required>
+  <option value="Yes">Sim, não farei nada disso e priorizarei o bem estar e integridade do animal</option>
+  <option value="No">Não, prefiro machucar um animal inocente com minhas ações irresponsáveis</option>
+  </select>
+</div>
+
+<div class="input-wrapper">
+  <label for="adoption-fup">Permite visitas, conversas e acompanhamento da adoção? <span>(eliminatória)</span></label>
+  <select id="adoption-fup" required>
+  <option value="Yes">Sim</option>
+  <option value="No">Não</option>
+  </select>
+</div>
+
+<div class="input-wrapper">
+  <label for="what-would-you-do">O que você faria se: o animal se perdesse / adoecesse / sofresse um acidente / arranhasse ou mordesse seu filho / Arranhasse seu sofá ou algum móvel / Fizesse as necessidades onde não deveria / Fizesse coisas que você não gostaria? <span>(eliminatória)</span></label>
+  <input type="text" id="what-would-you-do" required/>
+</div>
+
+<legend>Declaração:</legend>
+
+<div class="checkbox-wrapper">
+  <input type="checkbox" id="responsability" required/>
+    <label for="responsability">Declaro que todas as respostas aqui dadas são verdadeiras. Me comprometo a cuidar e amar o(s) gato(s) escolhido(s) e prestar todos os cuidados necessários para sua saúde e bem estar.</label>
+</div>
+
+<div id="separador" class="input-wrapper">
+  <h1>Importante:</h1>
+  <label for="final-considerations">O animal é entregue na casa do adotante. Quando a adoção for concretizada, será assinado um termo de responsabilidade onde o adotante assume legalmente o gato, que não poderá ser repassado para outra pessoa, ficando o adotante sujeito a processo em caso de maus tratos e abandono. O animal não poderá ficar acorrentado e deverá receber todo cuidado necessário.</label>
+
+</div>
+</fieldset>
+  </form>
+
+<footer>
+  <input 
+  class="button" 
+  type="submit" 
+  form="form"
+  value="Enviar minhas respostas">
+</footer>
+
+  </div>
+ 
+
+</body>
+</html>
